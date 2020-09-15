@@ -18,7 +18,7 @@ services:
     image: mysql:8.0
     volumes:
       - db-store:/var/lib/mysql
-      - ./infra/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./containers/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       - MYSQL_DATABASE=laravel_local
       - MYSQL_USER=phper
